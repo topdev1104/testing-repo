@@ -1,0 +1,44 @@
+var map = {
+	"./coin1.png": 468,
+	"./coin2.png": 469,
+	"./coinavax.png": 470,
+	"./coinbase.png": 471,
+	"./coinbsc.png": 472,
+	"./coineth.png": 473,
+	"./gate.png": 474,
+	"./inch1.png": 475,
+	"./inch2.png": 476,
+	"./inch3.png": 477,
+	"./kucoin.png": 478,
+	"./kyberdmm.png": 479,
+	"./pan1.png": 480,
+	"./pan2.png": 481,
+	"./panc1.png": 482,
+	"./panc2.png": 483,
+	"./safe1.png": 484,
+	"./safe2.png": 485,
+	"./trust1.png": 486,
+	"./trust2.png": 487,
+	"./uni1.png": 488,
+	"./uni2.png": 489
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 758;

@@ -1,0 +1,76 @@
+var map = {
+	"./buydypItems/coin98.png": 452,
+	"./buydypItems/coin98.svg": 453,
+	"./buydypItems/coinbase.png": 454,
+	"./buydypItems/coinbase.svg": 455,
+	"./buydypItems/gate.png": 456,
+	"./buydypItems/kucoin.png": 457,
+	"./buydypItems/metamask.png": 458,
+	"./buydypItems/metamask.svg": 459,
+	"./buydypItems/pancake.png": 460,
+	"./buydypItems/pangolin.png": 461,
+	"./buydypItems/safepal.png": 462,
+	"./buydypItems/safepal.svg": 463,
+	"./buydypItems/trustwallet.png": 464,
+	"./buydypItems/trustwallet.svg": 465,
+	"./buydypItems/uniswap.png": 466,
+	"./clockIcon.svg": 743,
+	"./coin98.png": 744,
+	"./coinbase.png": 745,
+	"./commingSoon.svg": 467,
+	"./dummyVideo.png": 746,
+	"./gateio.png": 747,
+	"./huobi.png": 748,
+	"./kucoin.png": 749,
+	"./kyber.png": 750,
+	"./mexc.png": 751,
+	"./noVideo.svg": 107,
+	"./oneinch.png": 752,
+	"./pancake.png": 753,
+	"./pangolin.png": 754,
+	"./poloniex.png": 755,
+	"./uniswap.png": 756,
+	"./vendorCardBackground.png": 757,
+	"./vids/coin1.png": 468,
+	"./vids/coin2.png": 469,
+	"./vids/coinavax.png": 470,
+	"./vids/coinbase.png": 471,
+	"./vids/coinbsc.png": 472,
+	"./vids/coineth.png": 473,
+	"./vids/gate.png": 474,
+	"./vids/inch1.png": 475,
+	"./vids/inch2.png": 476,
+	"./vids/inch3.png": 477,
+	"./vids/kucoin.png": 478,
+	"./vids/kyberdmm.png": 479,
+	"./vids/pan1.png": 480,
+	"./vids/pan2.png": 481,
+	"./vids/panc1.png": 482,
+	"./vids/panc2.png": 483,
+	"./vids/safe1.png": 484,
+	"./vids/safe2.png": 485,
+	"./vids/trust1.png": 486,
+	"./vids/trust2.png": 487,
+	"./vids/uni1.png": 488,
+	"./vids/uni2.png": 489
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 451;

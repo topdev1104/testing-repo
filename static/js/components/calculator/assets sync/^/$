@@ -1,0 +1,43 @@
+var map = {
+	"./avax.svg": 716,
+	"./avaxBackground.svg": 717,
+	"./bnb.svg": 718,
+	"./bnbBackground.svg": 719,
+	"./buybackIcon.svg": 416,
+	"./calculator.svg": 67,
+	"./calculatorChart.png": 225,
+	"./calculatorChart.svg": 720,
+	"./calculatorbg.png": 721,
+	"./dropdown.svg": 722,
+	"./eth.svg": 723,
+	"./ethBackground.svg": 724,
+	"./farmingIcon.svg": 417,
+	"./rightarrow.svg": 725,
+	"./stakingIcon.svg": 418,
+	"./usdc.svg": 300,
+	"./usdcBackground.svg": 726,
+	"./usdt.svg": 299,
+	"./usdtBackground.svg": 727,
+	"./vaultIcon.svg": 419,
+	"./xMark.svg": 75
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 421;

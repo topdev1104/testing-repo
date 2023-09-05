@@ -1,0 +1,71 @@
+var map = {
+	"./arrow-up.svg": 33,
+	"./avax/busd.svg": 396,
+	"./avax/dai.e.svg": 397,
+	"./avax/dyp.svg": 398,
+	"./avax/idyp.svg": 399,
+	"./avax/link.e.svg": 400,
+	"./avax/png.svg": 401,
+	"./avax/qi.svg": 402,
+	"./avax/usdc.e.svg": 403,
+	"./avax/usdt.e.svg": 404,
+	"./avax/usdt.svg": 405,
+	"./avax/wavax.svg": 185,
+	"./avax/wbtc.e.svg": 406,
+	"./avax/weth.e.svg": 255,
+	"./avax/xava.svg": 407,
+	"./bsc/btcb.svg": 408,
+	"./bsc/busd.svg": 409,
+	"./bsc/cake.svg": 410,
+	"./bsc/eth.svg": 411,
+	"./bsc/usdt.svg": 412,
+	"./bsc/wbnb.svg": 127,
+	"./caws-bg.svg": 686,
+	"./check.svg": 45,
+	"./copy.svg": 43,
+	"./dai.svg": 687,
+	"./dropdownVector.svg": 58,
+	"./dyp.svg": 256,
+	"./ellipse.svg": 29,
+	"./ellipse2.svg": 688,
+	"./empty.svg": 44,
+	"./greenarrow.svg": 689,
+	"./idyp.svg": 690,
+	"./more-info.svg": 10,
+	"./orangearrow.svg": 691,
+	"./poolStatsIcon.svg": 76,
+	"./poolsCalculatorIcon.svg": 39,
+	"./purpleStat.svg": 30,
+	"./referral.svg": 47,
+	"./stats.svg": 87,
+	"./statsLinkIcon.svg": 17,
+	"./tooltipIcon.svg": 692,
+	"./toppick.svg": 693,
+	"./usdc.svg": 694,
+	"./usdt.svg": 128,
+	"./wallet.svg": 31,
+	"./wavax.svg": 257,
+	"./wbtc.svg": 695,
+	"./weth.svg": 100,
+	"./whiteArrowUp.svg": 126
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 105;

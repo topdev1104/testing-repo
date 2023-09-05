@@ -1,0 +1,37 @@
+var map = {
+	"./coin98.png": 452,
+	"./coin98.svg": 453,
+	"./coinbase.png": 454,
+	"./coinbase.svg": 455,
+	"./gate.png": 456,
+	"./kucoin.png": 457,
+	"./metamask.png": 458,
+	"./metamask.svg": 459,
+	"./pancake.png": 460,
+	"./pangolin.png": 461,
+	"./safepal.png": 462,
+	"./safepal.svg": 463,
+	"./trustwallet.png": 464,
+	"./trustwallet.svg": 465,
+	"./uniswap.png": 466
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 759;

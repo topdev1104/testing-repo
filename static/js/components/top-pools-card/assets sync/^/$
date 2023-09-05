@@ -1,0 +1,55 @@
+var map = {
+	"./arrow-up.svg": 160,
+	"./avax.svg": 364,
+	"./benqi.svg": 365,
+	"./bsc.svg": 366,
+	"./btcb.svg": 367,
+	"./busd.svg": 368,
+	"./cawsLabel.svg": 190,
+	"./cawsbanner.svg": 155,
+	"./cawslogo.png": 382,
+	"./cawslogo.svg": 369,
+	"./dai.svg": 370,
+	"./dyplogo.svg": 108,
+	"./ellipse.svg": 159,
+	"./ethereum.svg": 371,
+	"./greenarrow.svg": 68,
+	"./idypius.svg": 372,
+	"./lanft-poolicon.png": 191,
+	"./link.svg": 373,
+	"./more-info.svg": 189,
+	"./newCawsLogo.png": 192,
+	"./newPool.png": 89,
+	"./orangearrow.svg": 63,
+	"./pancakeswap.svg": 374,
+	"./pangolin.svg": 375,
+	"./purpleArrow.svg": 132,
+	"./staked.svg": 130,
+	"./toppick.svg": 133,
+	"./toppools-bg.png": 383,
+	"./usdc.svg": 376,
+	"./usdt.svg": 377,
+	"./wbtc.svg": 378,
+	"./weth.svg": 379,
+	"./xava.svg": 380
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 381;

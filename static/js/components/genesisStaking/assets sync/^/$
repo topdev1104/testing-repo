@@ -1,0 +1,42 @@
+var map = {
+	"./buildingsIcon.svg": 762,
+	"./cawsFixedApr.svg": 307,
+	"./cawsIcon.png": 308,
+	"./cawsOpensea.png": 309,
+	"./coinIcon.svg": 763,
+	"./coinStackIcon.svg": 764,
+	"./connectIcon.svg": 166,
+	"./enviromentIcon.svg": 765,
+	"./ethereum.svg": 168,
+	"./ethereumTag.png": 167,
+	"./genesisFixedApr.png": 303,
+	"./genesisIcon.png": 306,
+	"./genesisOpensea.png": 302,
+	"./giftIcon.svg": 766,
+	"./greenBlot.png": 767,
+	"./lessIcon.svg": 305,
+	"./moreIcon.svg": 304,
+	"./npcIcon.svg": 768,
+	"./toolsIcon.svg": 169,
+	"./tooltip.svg": 102
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 491;
